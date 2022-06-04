@@ -100,7 +100,7 @@ button {
 }
 @media (max-width: 800px) {
   body {
-    overflow-x: hidden;
+    overflow: hidden;
   }
   h1 {
     font-size: 15pt;
