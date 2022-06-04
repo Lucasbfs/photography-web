@@ -2,31 +2,13 @@ html {
   background-color: black;
   font-family: "Overlock", cursive;
   text-align: center;
-  margin: 0;
+  margin: auto;
+  overflow-x: hidden;
+  font-family: "Quicksand", sans-serif;
 }
 button {
   background: none;
   border: none;
-}
-
-.picture-img {
-  max-width: 90%;
-  border-radius: 30px;
-}
-.grid-img {
-  max-width: 90%;
-}
-
-.title-no-grid {
-  margin-top: 50px;
-  color: white;
-  font-weight: 900;
-}
-.title-with-grid {
-  margin-top: 50px;
-  color: white;
-  font-weight: 500;
-  font-size: 20pt;
 }
 .navbar {
   background-color: white;
@@ -34,6 +16,28 @@ button {
   height: 8vh;
   width: 8vh;
   margin: 10px 0 0 0;
+}
+
+.picture-img {
+  max-width: 90%;
+  border-radius: 30px;
+  margin: auto;
+}
+.grid-img {
+  max-width: 90%;
+  margin: auto;
+}
+
+.title-no-grid {
+  margin-top: 50px;
+  color: white;
+  font-weight: 700;
+}
+.title-with-grid {
+  margin-top: 50px;
+  color: white;
+  font-weight: 500;
+  font-size: 15pt;
 }
 
 .grid-icon {
@@ -61,7 +65,6 @@ button {
   height: 100vh;
   z-index: 10;
   background: rgba(0, 0, 0, 0.75);
-  overflow: hidden;
   overflow-y: scroll;
 }
 
@@ -75,6 +78,7 @@ button {
 
 .card-view-img {
   max-width: 90%;
+  margin: auto;
 }
 
 .scroll-to-top {
@@ -85,8 +89,8 @@ button {
   background-color: white;
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 20px;
-  border-radius: 50px;
-  font-size: 20px;
+  border-radius: 50%;
+  font-size: 25px;
 }
 .opacity-btn {
   opacity: 100;
@@ -95,8 +99,20 @@ button {
   opacity: 0;
 }
 @media (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
   h1 {
-    font-size: 13pt;
+    font-size: 15pt;
+  }
+  .title-with-grid {
+    font-size: 10pt;
+  }
+  .picture-img {
+    max-width: 80%;
+  }
+  .grid-img {
+    max-width: 80%;
   }
   .grid-icon {
     width: 35px;

@@ -3,6 +3,7 @@ import { FaArrowCircleUp } from "react-icons/fa";
 
 const ScrollButton = () => {
   const [visible, setVisible] = useState(false);
+  const [hover, setHover] = useState(false);
 
   const toggleVisible = () => {
     if (window.pageYOffset > 300) {
@@ -22,7 +23,7 @@ const ScrollButton = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: "auto",
       /* I can also use 'auto' behaviour
          in place of 'smooth' */
     });
@@ -36,17 +37,32 @@ const ScrollButton = () => {
     };
   }, []);
 
+  const onHover = () => {
+    setHover(true);
+  };
+  const onLeave = () => {
+    setHover(false);
+  };
+
+  const showText = () => {
+    if (hover === true) {
+      console.log("is true");
+    } else {
+      console.log("is not true");
+    }
+  };
+
   return (
-    <div className="scroll-to-top">
+    <div>
       <button
         type="button"
         onClick={scrollToTop}
         className={visible ? "opacity-btn" : "opacity-zero"}
       >
         <FaArrowCircleUp
+          className="scroll-to-top"
           onClick={scrollToTop}
           aria-hidden="true"
-          className="h-6 w-6"
         />
       </button>
     </div>

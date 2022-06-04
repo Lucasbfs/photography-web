@@ -12,7 +12,7 @@ function Pictures() {
   const [selectedIndex, setSelectedIndex] = useState();
 
   useEffect(() => {
-    Aos.init({ duration: 1700 });
+    Aos.init({ duration: 2000 });
   }, []);
 
   const randChoice = (arr) => {
@@ -46,8 +46,10 @@ function Pictures() {
             <div>
               <h1 className="title-no-grid">{image.title}</h1>
               <img
+                key={image.id}
                 className="picture-img"
                 data-aos={randChoice(animations)}
+                data-aos-delay="50"
                 src={image.image}
                 alt="nature1"
               />
@@ -62,8 +64,10 @@ function Pictures() {
                 <h1 className="title-with-grid">{image.title}</h1>
                 <button onClick={(e) => openCardView(e, index)}>
                   <img
+                    key={image.id}
                     className="grid-item grid-img"
                     data-aos={randChoice(animations)}
+                    data-aos-delay="50"
                     src={image.image}
                     alt="nature1"
                   />
@@ -76,6 +80,7 @@ function Pictures() {
             <div className="backdrop" onClick={closeCardView}>
               <div className="card-view">
                 <img
+                  key={images.id}
                   className="grid-item card-view-img"
                   src={images[selectedIndex].image}
                 />

@@ -14,11 +14,8 @@ import love from "../../assets/images/love.JPG";
 import moon from "../../assets/images/moon.JPG";
 import sunset from "../../assets/images/sunset.JPG";
 import vintage from "../../assets/images/vintage.JPG";
-
 import tatakua from "../../assets/images/tatakua.JPG";
 import flower from "../../assets/images/flower.JPG";
-
-//hello
 
 const images = [
   {
@@ -106,11 +103,11 @@ const images = [
     title: "Flower",
     image: flower,
   },
-  // {
-  //   id: 17,
-  //   title: "Sunset",
-  //   image: sunset,
-  // },
+  {
+    id: 17,
+    title: "Sunset",
+    image: sunset,
+  },
 ];
 
 export default images;
