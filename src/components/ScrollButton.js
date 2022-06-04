@@ -63,6 +63,7 @@ const ScrollButton = () => {
           className="scroll-to-top"
           onClick={scrollToTop}
           aria-hidden="true"
+          color="black"
         />
       </button>
     </div>
