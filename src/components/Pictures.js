@@ -38,7 +38,7 @@ function Pictures() {
   return (
     <Fragment>
       <button className="navbar" onClick={transfToGrid}>
-        <BiGridAlt size="40px" stroke="20px" className="icon" />
+        <BiGridAlt size="40px" stroke="20px" className="icon" color="black" />
       </button>
       {!gridIsActive ? (
         <div>
