@@ -3,8 +3,8 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import animations from "./data/animations";
 import images from "./data/images";
-import GridTransf from "./GridTransf";
-// import nature1 from "../assets/images/DSC00371.JPG";
+import { BiGridAlt } from "react-icons/bi";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Pictures() {
   const [gridIsActive, setGridIsActive] = useState(false);
@@ -37,15 +37,15 @@ function Pictures() {
 
   return (
     <Fragment>
-      <button onClick={transfToGrid}>
-        <GridTransf />
+      <button className="navbar" onClick={transfToGrid}>
+        <BiGridAlt size="40px" stroke="20px" className="icon" />
       </button>
       {!gridIsActive ? (
         <div>
           {images.map((image) => (
             <div>
               <h1 className="title-no-grid">{image.title}</h1>
-              <img
+              <LazyLoadImage
                 key={image.id}
                 className="picture-img"
                 data-aos={randChoice(animations)}
@@ -63,7 +63,7 @@ function Pictures() {
               <div className="grid-item">
                 <h1 className="title-with-grid">{image.title}</h1>
                 <button onClick={(e) => openCardView(e, index)}>
-                  <img
+                  <LazyLoadImage
                     key={image.id}
                     className="grid-item grid-img"
                     data-aos={randChoice(animations)}
@@ -79,7 +79,7 @@ function Pictures() {
           {cardViewIsActive && (
             <div className="backdrop" onClick={closeCardView}>
               <div className="card-view">
-                <img
+                <LazyLoadImage
                   key={images.id}
                   className="grid-item card-view-img"
                   src={images[selectedIndex].image}

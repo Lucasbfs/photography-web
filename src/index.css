@@ -18,6 +18,9 @@ button {
   width: 8vh;
   margin: 10px 0 0 0;
 }
+.icon {
+  margin-top: 3px;
+}
 
 .picture-img {
   max-width: 90%;
@@ -94,11 +97,14 @@ button {
   font-size: 25px;
 }
 .opacity-btn {
-  opacity: 100;
+  opacity: 0.3;
+  transition: opacity 1s;
 }
 .opacity-zero {
-  opacity: 0;
+  opacity: 1;
+  transition: opacity 1s;
 }
+
 @media (max-width: 800px) {
   body {
     overflow: hidden;

@@ -11,21 +11,14 @@ const ScrollButton = () => {
     } else {
       setVisible(false);
     }
-    // const scrolled = document.documentElement.scrollTop; //get scroll action and save it inside a variable
-    // if (scrolled > 300) {
-    //   //greater than 300 milisec
-    //   setVisible(true);
-    // } else if (scrolled <= 300) {
-    //   setVisible(false);
-    // }
   };
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "auto",
-      /* I can also use 'auto' behaviour
-         in place of 'smooth' */
+      /* I can also use 'smooth' behaviour
+         in place of 'auto' */
     });
   };
 
@@ -57,7 +50,7 @@ const ScrollButton = () => {
       <button
         type="button"
         onClick={scrollToTop}
-        className={visible ? "opacity-btn" : "opacity-zero"}
+        className={visible ? "opacity-zero" : "opacity-btn"}
       >
         <FaArrowCircleUp
           className="scroll-to-top"
