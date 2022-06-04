@@ -9,6 +9,7 @@ html {
 button {
   background: none;
   border: none;
+  padding: 0;
 }
 .navbar {
   background-color: white;
@@ -106,7 +107,11 @@ button {
     font-size: 15pt;
   }
   .title-with-grid {
-    font-size: 10pt;
+    font-size: 12pt;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   .picture-img {
     max-width: 80%;
