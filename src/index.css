@@ -36,6 +36,7 @@ button {
   margin-top: 50px;
   color: white;
   font-weight: 700;
+  font-style: italic;
 }
 .title-with-grid {
   margin-top: 50px;
@@ -103,6 +104,32 @@ button {
 .opacity-zero {
   opacity: 1;
   transition: opacity 1s;
+}
+
+.hover-text-top {
+  position: fixed;
+  right: 17px;
+  bottom: 90px;
+  border-radius: 10px;
+  background-color: gainsboro;
+  cursor: pointer; /* Add a mouse pointer on hover */
+  font-size: 12px;
+  padding: 0 20px 0 20px;
+  transition: 1s;
+  z-index: 120; /* Make sure it does not overlap */
+}
+
+.hover-text-grid {
+  position: fixed;
+  left: 597.5px;
+  top: 90px;
+  border-radius: 10px;
+  background-color: gainsboro;
+  cursor: pointer; /* Add a mouse pointer on hover */
+  font-size: 12px;
+  padding: 0 20px 0 20px;
+  transition: 1s;
+  z-index: 120; /* Make sure it does not overlap */
 }
 
 @media (max-width: 800px) {

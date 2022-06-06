@@ -6,7 +6,7 @@ import images from "./data/images";
 import { BiGridAlt } from "react-icons/bi";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-function Pictures() {
+function Pictures(props) {
   const [gridIsActive, setGridIsActive] = useState(false);
   const [cardViewIsActive, setCardViewIsActive] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState();
@@ -37,8 +37,20 @@ function Pictures() {
 
   return (
     <Fragment>
-      <button className="navbar" onClick={transfToGrid}>
+      <button
+        className="navbar"
+        onClick={transfToGrid}
+        onMouseOver={props.onHover}
+        onMouseLeave={props.onLeave}
+      >
         <BiGridAlt size="40px" stroke="20px" className="icon" color="black" />
+        {props.hover && (
+          <div className="hover-text-grid">
+            <p>
+              <strong>hello</strong>
+            </p>
+          </div>
+        )}
       </button>
       {!gridIsActive ? (
         <div>

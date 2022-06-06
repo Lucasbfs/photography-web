@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowCircleUp } from "react-icons/fa";
 
-const ScrollButton = () => {
+const ScrollButton = (props) => {
   const [visible, setVisible] = useState(false);
   const [hover, setHover] = useState(false);
 
@@ -36,22 +36,22 @@ const ScrollButton = () => {
   const onLeave = () => {
     setHover(false);
   };
-
-  const showText = () => {
-    if (hover === true) {
-      console.log("is true");
-    } else {
-      console.log("is not true");
-    }
-  };
-
   return (
     <div>
       <button
         type="button"
         onClick={scrollToTop}
         className={visible ? "opacity-zero" : "opacity-btn"}
+        onMouseOver={onHover}
+        onMouseLeave={onLeave}
       >
+        {hover && (
+          <div className="hover-text-top">
+            <p>
+              <strong>Go to top</strong>
+            </p>
+          </div>
+        )}
         <FaArrowCircleUp
           className="scroll-to-top"
           onClick={scrollToTop}
