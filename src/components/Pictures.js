@@ -5,6 +5,7 @@ import animations from "./data/animations";
 import images from "./data/images";
 import { BiGridAlt } from "react-icons/bi";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import useProgressiveImg from "./hooks/useFasterImg";
 
 function Pictures(props) {
   const [gridIsActive, setGridIsActive] = useState(false);

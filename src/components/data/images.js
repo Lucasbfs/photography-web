@@ -1,21 +1,22 @@
-import nature1 from "../../assets/images/DSC00371.JPG";
-import nature2 from "../../assets/images/DSC00376.JPG";
-import nature3 from "../../assets/images/DSC00378.JPG";
-import nature4 from "../../assets/images/DSC00390.JPG";
-import nature5 from "../../assets/images/DSC00333.JPG";
-import nature6 from "../../assets/images/DSC00313.JPG";
+import nature1 from "../../assets/images/closeWaterfall.JPG";
+import nature2 from "../../assets/images/DSC00376-min.JPG";
+import nature3 from "../../assets/images/DSC00378-min.JPG";
+import nature4 from "../../assets/images/DSC00390-min.JPG";
+import nature5 from "../../assets/images/DSC00333-min.JPG";
+import nature6 from "../../assets/images/DSC00313-min.JPG";
 import tree from "../../assets/images/tree.JPG";
 import campo from "../../assets/images/campo.JPG";
 import cactus from "../../assets/images/cactus.JPG";
-import bird from "../../assets/images/IMG_2437.JPG";
-import dog from "../../assets/images/dog.JPG";
+import bird from "../../assets/images/bird.JPG";
+import dog from "../../assets/images/dog.jpeg";
 import baby from "../../assets/images/baby.JPG";
 import love from "../../assets/images/love.JPG";
 import moon from "../../assets/images/moon.JPG";
 import sunset from "../../assets/images/sunset.JPG";
 import vintage from "../../assets/images/vintage.JPG";
 import tatakua from "../../assets/images/tatakua.JPG";
-import flower from "../../assets/images/flower.JPG";
+import flower from "../../assets/images/flower.jpeg";
+import violetSunset from "../../assets/images/violetSunset.jpeg";
 
 const images = [
   {
@@ -107,6 +108,11 @@ const images = [
     id: 17,
     title: "Sunset",
     image: sunset,
+  },
+  {
+    id: 18,
+    title: "Violet Sunset",
+    image: violetSunset,
   },
 ];
 
