@@ -5,7 +5,6 @@ import animations from "./data/animations";
 import images from "./data/images";
 import { BiGridAlt } from "react-icons/bi";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import useProgressiveImg from "./hooks/useFasterImg";
 
 function Pictures(props) {
   const [gridIsActive, setGridIsActive] = useState(false);
@@ -38,20 +37,8 @@ function Pictures(props) {
 
   return (
     <Fragment>
-      <button
-        className="navbar"
-        onClick={transfToGrid}
-        onMouseOver={props.onHover}
-        onMouseLeave={props.onLeave}
-      >
+      <button className="navbar" onClick={transfToGrid}>
         <BiGridAlt size="40px" stroke="20px" className="icon" color="black" />
-        {props.hover && (
-          <div className="hover-text-grid">
-            <p>
-              <strong>hello</strong>
-            </p>
-          </div>
-        )}
       </button>
       {!gridIsActive ? (
         <div>
@@ -66,6 +53,11 @@ function Pictures(props) {
                 src={image.image}
                 alt="nature1"
               />
+              <div className="full-size-box">
+                <a href={image.fullImg} download className="full-size">
+                  Download Full Resolution
+                </a>
+              </div>
             </div>
           ))}
         </div>
@@ -77,7 +69,6 @@ function Pictures(props) {
                 <h1 className="title-with-grid">{image.title}</h1>
                 <button onClick={(e) => openCardView(e, index)}>
                   <LazyLoadImage
-                    key={image.id}
                     className="grid-item grid-img"
                     data-aos={randChoice(animations)}
                     data-aos-delay="50"
@@ -93,7 +84,6 @@ function Pictures(props) {
             <div className="backdrop" onClick={closeCardView}>
               <div className="card-view">
                 <LazyLoadImage
-                  key={images.id}
                   className="grid-item card-view-img"
                   src={images[selectedIndex].image}
                 />
