@@ -119,19 +119,6 @@ button {
   z-index: 120; /* Make sure it does not overlap */
 }
 
-.hover-text-grid {
-  position: fixed;
-  left: 597.5px;
-  top: 90px;
-  border-radius: 10px;
-  background-color: gainsboro;
-  cursor: pointer; /* Add a mouse pointer on hover */
-  font-size: 12px;
-  padding: 0 20px 0 20px;
-  transition: 1s;
-  z-index: 120; /* Make sure it does not overlap */
-}
-
 @media (max-width: 800px) {
   body {
     overflow: hidden;
@@ -161,5 +148,8 @@ button {
   }
   .card-view {
     top: 32%;
+  }
+  .hover-text-top {
+    visibility: hidden;
   }
 }
