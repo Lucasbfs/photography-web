@@ -17,6 +17,13 @@ import vintage from "../../assets/images/vintage.JPG";
 import tatakua from "../../assets/images/tatakua.JPG";
 import flower from "../../assets/images/flower.jpeg";
 import violetSunset from "../../assets/images/violetSunset.jpeg";
+import campoLakeLow from "../../assets/images/campoLakeLowRes.JPG";
+import duckLowRes from "../../assets/images/duckLowRes.JPG";
+import wichitaLowRes from "../../assets/images/wichitaLowRes.JPG";
+import mariquitaLowRes from "../../assets/images/mariquitaLowRes.JPG";
+import birdsLowRes from "../../assets/images/birdsLowRes.JPG";
+import abstractLowRes from "../../assets/images/abstractLowRes.JPG";
+import moonAndPLaneLowRes from "../../assets/images/moon-planeLowRes.JPG";
 
 //FULL SIZE
 import closeWaterfallFull from "../../assets/full-size-imgs/fullSizeImages/closeWaterfallFull.JPG";
@@ -38,6 +45,13 @@ import tatakuaFull from "../../assets/full-size-imgs/fullSizeImages/tatakuaFull.
 import flowerFull from "../../assets/full-size-imgs/fullSizeImages/flowerFull.JPG";
 import sunsetFull from "../../assets/full-size-imgs/fullSizeImages/sunsetFull.JPG";
 import violetSunsetFull from "../../assets/full-size-imgs/fullSizeImages/violetSunsetFull.JPG";
+import campoLakeFull from "../../assets/full-size-imgs/fullSizeImages/campoLakeFull.JPG";
+import duckFull from "../../assets/full-size-imgs/fullSizeImages/duckFull.JPG";
+import wichitaFull from "../../assets/full-size-imgs/fullSizeImages/wichitaFull.JPG";
+import mariquitaFull from "../../assets/full-size-imgs/fullSizeImages/mariquitaFull.JPG";
+import birdsFull from "../../assets/full-size-imgs/fullSizeImages/birdsFull.JPG";
+import abstractFull from "../../assets/full-size-imgs/fullSizeImages/abstractFull.JPG";
+import moonAndPLaneFull from "../../assets/full-size-imgs/fullSizeImages/moon-planeFull.JPG";
 
 const images = [
   {
@@ -153,6 +167,48 @@ const images = [
     title: "Violet Sunset",
     image: violetSunset,
     fullImg: violetSunsetFull,
+  },
+  {
+    id: 19,
+    title: "Farm Lake",
+    image: campoLakeLow,
+    fullImg: campoLakeFull,
+  },
+  {
+    id: 20,
+    title: "duck",
+    image: duckLowRes,
+    fullImg: duckFull,
+  },
+  {
+    id: 21,
+    title: "Wichita KS",
+    image: wichitaLowRes,
+    fullImg: wichitaFull,
+  },
+  {
+    id: 22,
+    title: "Mariquita",
+    image: mariquitaLowRes,
+    fullImg: mariquitaFull,
+  },
+  {
+    id: 23,
+    title: "Birds on Cable",
+    image: birdsLowRes,
+    fullImg: birdsFull,
+  },
+  {
+    id: 24,
+    title: "Abstract",
+    image: abstractLowRes,
+    fullImg: abstractFull,
+  },
+  {
+    id: 25,
+    title: "Moon & Plane",
+    image: moonAndPLaneLowRes,
+    fullImg: moonAndPLaneFull,
   },
 ];
 
